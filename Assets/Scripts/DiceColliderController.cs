@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class DiceColliderController : MonoBehaviour
 {
-    public int sideUp;
+    [SerializeField] private int sideUp;
+    [SerializeField] private DiceController diceController;
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Dice collider trigger");
         if (other.gameObject.CompareTag("Ground"))
         {
-            DiceController diceController = GameObject.FindGameObjectWithTag("Dice").GetComponent<DiceController>();
             diceController.SetSideUp(sideUp);
         }
     }

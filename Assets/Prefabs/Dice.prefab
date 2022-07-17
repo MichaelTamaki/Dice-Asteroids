@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3148160478622866821}
   - component: {fileID: 4827261549813610996}
   - component: {fileID: 6707086985522752806}
+  - component: {fileID: 765747100801624425}
   m_Layer: 0
   m_Name: Side Two
   m_TagString: DiceCollider
@@ -49,7 +50,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 692740337651943429}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -109,6 +110,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sideUp: 5
+  diceController: {fileID: 8778259174947250413}
+--- !u!54 &765747100801624425
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692740337651943429}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1687028773669103395
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,6 +140,7 @@ GameObject:
   - component: {fileID: 8793089803585234491}
   - component: {fileID: 6475685901338772973}
   - component: {fileID: 3132656241423623209}
+  - component: {fileID: 4381867747717226051}
   m_Layer: 0
   m_Name: Side One
   m_TagString: DiceCollider
@@ -158,7 +177,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687028773669103395}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -218,6 +237,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sideUp: 6
+  diceController: {fileID: 8778259174947250413}
+--- !u!54 &4381867747717226051
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687028773669103395}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5644764416317127068
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,7 +277,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5644764416317127068}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -251,8 +287,8 @@ Transform:
   - {fileID: 8922242162834821542}
   - {fileID: 2826823442732390927}
   - {fileID: 107857921471250460}
-  m_Father: {fileID: 8346295795364509323}
-  m_RootOrder: 1
+  m_Father: {fileID: 6084589699881076677}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6500546740375238490
 GameObject:
@@ -267,6 +303,7 @@ GameObject:
   - component: {fileID: 3248030802367430337}
   - component: {fileID: 3977009606758793097}
   - component: {fileID: 3331831427481933330}
+  - component: {fileID: 7668377350824722755}
   m_Layer: 0
   m_Name: Side Three
   m_TagString: DiceCollider
@@ -303,7 +340,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6500546740375238490}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -363,6 +400,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sideUp: 4
+  diceController: {fileID: 8778259174947250413}
+--- !u!54 &7668377350824722755
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6500546740375238490}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7274180582961042626
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,6 +430,7 @@ GameObject:
   - component: {fileID: 6637727299414384267}
   - component: {fileID: 8527551888882079306}
   - component: {fileID: 8601713848291990629}
+  - component: {fileID: 6228890971064932176}
   m_Layer: 0
   m_Name: Side Five
   m_TagString: DiceCollider
@@ -412,7 +467,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7274180582961042626}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -472,6 +527,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sideUp: 2
+  diceController: {fileID: 8778259174947250413}
+--- !u!54 &6228890971064932176
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7274180582961042626}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8792920566008063037
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,7 +557,7 @@ GameObject:
   - component: {fileID: 7544930179637683317}
   - component: {fileID: 5072669225894057677}
   - component: {fileID: 8778259174947250413}
-  - component: {fileID: 6461385425848856494}
+  - component: {fileID: 3158140206199849794}
   m_Layer: 0
   m_Name: Dice
   m_TagString: Dice
@@ -505,7 +577,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6084589699881076677}
-  - {fileID: 7538107430217190659}
+  - {fileID: 6933343287637054678}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -583,9 +655,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bed665608c8c1748be41e47bb8f908d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diceObj: {fileID: 6862112218555211135}
+  missileIndicatorObj: {fileID: 3401720054939234253}
   sideUp: 0
   sideLength: 1.4
---- !u!54 &6461385425848856494
+  missilePrefab: {fileID: 1314102123456578123, guid: 957cc475b0ce48243b48d2b76521e7e9, type: 3}
+  bounds: {x: 11.2, y: 0, z: 7}
+--- !u!54 &3158140206199849794
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -596,7 +672,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -614,6 +690,7 @@ GameObject:
   - component: {fileID: 4852315896954467073}
   - component: {fileID: 8550010263466033688}
   - component: {fileID: 5180517696082897331}
+  - component: {fileID: 5706004368447191501}
   m_Layer: 0
   m_Name: Side Four
   m_TagString: DiceCollider
@@ -650,7 +727,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9129268510725210671}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -710,6 +787,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sideUp: 3
+  diceController: {fileID: 8778259174947250413}
+--- !u!54 &5706004368447191501
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9129268510725210671}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &9218817510659799017
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,6 +817,7 @@ GameObject:
   - component: {fileID: 4276724748568956008}
   - component: {fileID: 2628550542153997984}
   - component: {fileID: 7878894656663027682}
+  - component: {fileID: 5114701318007112231}
   m_Layer: 0
   m_Name: Side Six
   m_TagString: DiceCollider
@@ -759,7 +854,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9218817510659799017}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -819,6 +914,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sideUp: 1
+  diceController: {fileID: 8778259174947250413}
+--- !u!54 &5114701318007112231
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9218817510659799017}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &98648686600051246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -892,8 +1004,88 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d2b9188252a78b4298fb8e34d9229ee, type: 3}
+--- !u!1 &6862112218555211135 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6801955793903224657, guid: 0d2b9188252a78b4298fb8e34d9229ee, type: 3}
+  m_PrefabInstance: {fileID: 98648686600051246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6084589699881076677 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6138043921473953259, guid: 0d2b9188252a78b4298fb8e34d9229ee, type: 3}
   m_PrefabInstance: {fileID: 98648686600051246}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4398317776151702918
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8346295795364509323}
+    m_Modifications:
+    - target: {fileID: 1314102123456578123, guid: 957cc475b0ce48243b48d2b76521e7e9, type: 3}
+      propertyPath: m_Name
+      value: Dice Missile
+      objectReference: {fileID: 0}
+    - target: {fileID: 2390853224263388334, guid: 957cc475b0ce48243b48d2b76521e7e9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407413414543679257, guid: 957cc475b0ce48243b48d2b76521e7e9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715386333969054032, guid: 957cc475b0ce48243b48d2b76521e7e9, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715386333969054032, guid: 957cc475b0ce48243b48d2b76521e7e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715386333969054032, guid: 957cc475b0ce48243b48d2b76521e7e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715386333969054032, guid: 957cc475b0ce48243b48d2b76521e7e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715386333969054032, guid: 957cc475b0ce48243b48d2b76521e7e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715386333969054032, guid: 957cc475b0ce48243b48d2b76521e7e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715386333969054032, guid: 957cc475b0ce48243b48d2b76521e7e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715386333969054032, guid: 957cc475b0ce48243b48d2b76521e7e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715386333969054032, guid: 957cc475b0ce48243b48d2b76521e7e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715386333969054032, guid: 957cc475b0ce48243b48d2b76521e7e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715386333969054032, guid: 957cc475b0ce48243b48d2b76521e7e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 957cc475b0ce48243b48d2b76521e7e9, type: 3}
+--- !u!1 &3401720054939234253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1314102123456578123, guid: 957cc475b0ce48243b48d2b76521e7e9, type: 3}
+  m_PrefabInstance: {fileID: 4398317776151702918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6933343287637054678 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6715386333969054032, guid: 957cc475b0ce48243b48d2b76521e7e9, type: 3}
+  m_PrefabInstance: {fileID: 4398317776151702918}
   m_PrefabAsset: {fileID: 0}
