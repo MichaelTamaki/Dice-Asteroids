@@ -7,6 +7,7 @@ public class DiceController : MonoBehaviour
 {
     [SerializeField] private GameObject diceObj; // Used for showing rotation
     [SerializeField] private GameObject missileIndicatorObj; // Used for showing direction of shot
+    [SerializeField] private GameObject loadedIndicatorObj; // Used to show when the missile is ready to fire
     [SerializeField] private int sideUp;
     [SerializeField] private float sideLength;
     [SerializeField] private GameObject missilePrefab;
@@ -73,6 +74,7 @@ public class DiceController : MonoBehaviour
         Instantiate(missilePrefab, missileIndicatorObj.transform.position, missileIndicatorObj.transform.rotation);
         missileCooldownTime = sideUp;
         UpdateCooldownText();
+        GetComponent<AudioSource>().Play();
     }
 
     private void StartMove(Vector3 translationVector, Vector3 rotationVector)
@@ -120,5 +122,6 @@ public class DiceController : MonoBehaviour
     private void UpdateCooldownText()
     {
         uiManager.cooldownUi.SetText(string.Format("Cooldown: {0:#.00}", missileCooldownTime));
+        loadedIndicatorObj.SetActive(missileCooldownTime == 0f);
     }
 }

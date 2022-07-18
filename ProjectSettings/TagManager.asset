@@ -10,6 +10,8 @@ TagManager:
   - UIManager
   - Barrier
   - Missile
+  - Asteroid
+  - Inbounds
   layers:
   - Default
   - TransparentFX
